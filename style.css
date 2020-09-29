@@ -21,6 +21,7 @@ body {
 header{
     width: 20%;
     background: #050505;
+    box-sizing: border-box;
 }
 .con1{
     margin-left: 10%;
@@ -102,6 +103,9 @@ a{
 .dropdown_menu{
     display: none;
 }
+.phone_menu{
+    display: none;
+}
 @media (max-width: 500px) and (min-width: 360px) {
     .container{flex-direction: column;}
     header{
@@ -116,7 +120,11 @@ a{
         padding: 5px;
         margin: 0;
     }
-    button{
+    .phone_menu h1{
+        position: relative;
+        left: 25%;
+    }
+    .dropdown_menu{
         display: inline-block;
         position: relative;
         left: 35%;
@@ -131,6 +139,37 @@ a{
     }
     .cim{
         padding: 14px 14px 20px 14px;
+    }
+    .phone_menu{
+    display: none;
+    position: fixed;
+    background: black;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    z-index: 11;
+    box-sizing: border-box;
+    }
+    .nav_phone{
+        position: fixed;
+        text-align: center;
+        display: block;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .nav_phone p{
+        display: block;
+        font-size: 13px;
+        padding: 0;
+    } 
+    ul{
+        margin: 0;
+        padding: 0;
+        padding-top: 8px;
+        padding-bottom: 5px;
+    }
+    li{
+        font-size: 36px;
     }
     nav{display: none;}
     p{display: none;}
@@ -151,7 +190,11 @@ a{
         padding: 5px;
         margin: 0;
     }
-    button.menu{
+    .phone_menu h1{
+        position: relative;
+        left: 25%;
+    }
+    .dropdown_menu{
         display: inline-block;
         position: relative;
         left: 18%;
@@ -162,6 +205,37 @@ a{
     .cim{
         padding: 14px 14px 20px 14px;
     }
+    .phone_menu{
+        display: none;
+        position: fixed;
+        background: black;
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+        z-index: 11;
+        box-sizing: border-box;
+        }
+    .nav_phone{
+        position: fixed;
+        text-align: center;
+        display: block;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .nav_phone p{
+        display: block;
+        font-size: 12px;
+        padding: 0;
+    } 
+    ul{
+        margin: 0;
+        padding: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    li{
+        font-size: 34px;
+    }
     .menu img{
         display: inline-block;
         width: 50px;
@@ -171,3 +245,4 @@ a{
     p{display: none;}
     .con2{display: none;}
   }
+ 
